@@ -1,0 +1,28 @@
+
+### Test POST request with JSON payload
+POST http://localhost:4000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "name": "ramjan",
+    "email": "ramjan@gamil.com",
+    "password" : "password123"
+}
+### Test POST request with JSON payload
+POST http://localhost:4000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "ramjan13@example.com",
+    "password" : "password123"
+}
+
+### Test POST request with JSON payload
+POST http://localhost:4000/api/v1/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGE3ZTUyNDZmZjM2MWViY2ZiYjRhZSIsIm5hbWUiOiJSYW1qYW4gQWxpIiwiZW1haWwiOiJyYW1qYW4xM0BleGFtcGxlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjk1MjEzMDI4LCJleHAiOjE2OTUyMTY2Mjh9.WDA8rS3-EvT2d3MRFjxnI-2GyZVpsTzru1X7HHLL5ag
+
+{
+    "title": "ramjan@examle5.com",
+    "description" : "body of a note"
+}
